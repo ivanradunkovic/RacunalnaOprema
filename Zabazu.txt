@@ -1,6 +1,6 @@
 create database racunalna_oprema_hib;
 
-insert into oprema(naziv,macAdresa,cijena,datumKupnje) values ("Mis,"ivan@mac.hr","555","2019-1-1");
+insert into oprema(naziv,macAdresa,cijena,godinaKupnje) values ("Miš RAZER Abyssus","1A-C1-1B-61-D1-44","319","2019-1-1");
 
 insert into operater(email,lozinka,ime,prezime) values ("iradunkovic@gmail.com","$2a$10$wL5pTXnYf1DWsbQqCQ3fteiuOzBZLiDZcTDty3aDyrgJ8nnIqZLuW","Ivan","Radunkovic");
 
