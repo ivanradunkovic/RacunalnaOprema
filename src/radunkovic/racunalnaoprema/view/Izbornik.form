@@ -11,6 +11,9 @@
           <SubComponents>
             <MenuItem class="javax.swing.JMenuItem" name="jMenuItem1">
               <Properties>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/radunkovic/racunalnaoprema/view/users_icon.png"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Korisnici"/>
               </Properties>
               <Events>
@@ -19,6 +22,9 @@
             </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="jMenuItem3">
               <Properties>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/radunkovic/racunalnaoprema/view/eq.png"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Oprema"/>
               </Properties>
               <Events>
@@ -27,6 +33,9 @@
             </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="jMenuItem2">
               <Properties>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/radunkovic/racunalnaoprema/view/dep.png"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Odjeli"/>
               </Properties>
               <Events>
@@ -35,7 +44,10 @@
             </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="jMenuItem4">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Skladiste"/>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/radunkovic/racunalnaoprema/view/wrh.png"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Skladi&#x161;te"/>
               </Properties>
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenuItem4ActionPerformed"/>
@@ -43,6 +55,9 @@
             </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="jMenuItem5">
               <Properties>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/radunkovic/racunalnaoprema/view/otp.png"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Otpis"/>
               </Properties>
               <Events>
@@ -58,6 +73,9 @@
           <SubComponents>
             <MenuItem class="javax.swing.JMenuItem" name="jMenuItem6">
               <Properties>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/radunkovic/racunalnaoprema/view/abt.png"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="About"/>
               </Properties>
               <Events>

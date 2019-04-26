@@ -113,7 +113,7 @@ public class Odjeli extends javax.swing.JFrame {
         });
 
         jButton1.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jButton1.setText("Ocisti");
+        jButton1.setText("Očisti");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);

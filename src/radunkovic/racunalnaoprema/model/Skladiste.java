@@ -63,7 +63,7 @@ public class Skladiste extends Entitet implements Serializable{
 
     @Override
     public String toString() {
-        return "Naziv: " + naziv + "  dostupnost " + dostupnost + "  kolicina: " + kolicina;
+        return "Naziv: " + naziv + "  dostupnost " + dostupnost + "  količina: " + kolicina;
     }
 
 

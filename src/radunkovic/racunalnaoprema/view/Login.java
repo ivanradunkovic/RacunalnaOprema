@@ -41,10 +41,8 @@ public class Login extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(102, 255, 153));
 
-        jPanel1.setBackground(new java.awt.Color(153, 255, 153));
-
         jLabel1.setFont(new java.awt.Font("Tahoma", 3, 14)); // NOI18N
-        jLabel1.setText("email");
+        jLabel1.setText("E-mail:");
 
         txtemail.setText("iradunkovic@gmail.com");
         txtemail.addActionListener(new java.awt.event.ActionListener() {
@@ -54,7 +52,7 @@ public class Login extends javax.swing.JFrame {
         });
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 3, 14)); // NOI18N
-        jLabel2.setText("lozinka");
+        jLabel2.setText("Lozinka:");
 
         txtLozinka.setText("t");
 
@@ -79,9 +77,9 @@ public class Login extends javax.swing.JFrame {
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addComponent(txtLozinka)
-                                .addComponent(txtemail, javax.swing.GroupLayout.DEFAULT_SIZE, 173, Short.MAX_VALUE)))))
+                                .addComponent(txtemail, javax.swing.GroupLayout.DEFAULT_SIZE, 173, Short.MAX_VALUE)
+                                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                 .addContainerGap(85, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(

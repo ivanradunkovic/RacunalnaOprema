@@ -63,6 +63,7 @@ public class Izbornik extends javax.swing.JFrame {
 
         jMenu1.setText("Računalna oprema");
 
+        jMenuItem1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/radunkovic/racunalnaoprema/view/users_icon.png"))); // NOI18N
         jMenuItem1.setText("Korisnici");
         jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -71,6 +72,7 @@ public class Izbornik extends javax.swing.JFrame {
         });
         jMenu1.add(jMenuItem1);
 
+        jMenuItem3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/radunkovic/racunalnaoprema/view/eq.png"))); // NOI18N
         jMenuItem3.setText("Oprema");
         jMenuItem3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -79,6 +81,7 @@ public class Izbornik extends javax.swing.JFrame {
         });
         jMenu1.add(jMenuItem3);
 
+        jMenuItem2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/radunkovic/racunalnaoprema/view/dep.png"))); // NOI18N
         jMenuItem2.setText("Odjeli");
         jMenuItem2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -87,7 +90,8 @@ public class Izbornik extends javax.swing.JFrame {
         });
         jMenu1.add(jMenuItem2);
 
-        jMenuItem4.setText("Skladiste");
+        jMenuItem4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/radunkovic/racunalnaoprema/view/wrh.png"))); // NOI18N
+        jMenuItem4.setText("Skladište");
         jMenuItem4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jMenuItem4ActionPerformed(evt);
@@ -95,6 +99,7 @@ public class Izbornik extends javax.swing.JFrame {
         });
         jMenu1.add(jMenuItem4);
 
+        jMenuItem5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/radunkovic/racunalnaoprema/view/otp.png"))); // NOI18N
         jMenuItem5.setText("Otpis");
         jMenuItem5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -107,6 +112,7 @@ public class Izbornik extends javax.swing.JFrame {
 
         jMenu2.setText("Info");
 
+        jMenuItem6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/radunkovic/racunalnaoprema/view/abt.png"))); // NOI18N
         jMenuItem6.setText("About");
         jMenuItem6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

@@ -15,7 +15,6 @@ import javax.swing.JOptionPane;
 import radunkovic.racunalnaoprema.controller.ObradaOdjel;
 import radunkovic.racunalnaoprema.controller.ObradaOprema;
 import radunkovic.racunalnaoprema.controller.ObradaOtpis;
-import radunkovic.racunalnaoprema.model.Korisnik;
 import radunkovic.racunalnaoprema.model.Odjel;
 import radunkovic.racunalnaoprema.model.Oprema;
 import radunkovic.racunalnaoprema.model.Otpis;
@@ -26,7 +25,7 @@ import radunkovic.racunalnaoprema.pomocno.RacunalnaOpremaException;
  * @author Ivan
  */
 public class Otpisi extends javax.swing.JFrame {
-    
+
     private ObradaOtpis obradaOtpis;
     private DecimalFormat format;
     private static DefaultComboBoxModel<Odjel> modelOdjel;
@@ -43,7 +42,7 @@ public class Otpisi extends javax.swing.JFrame {
         );
         format = (DecimalFormat) nf;
         format.applyPattern("#,###.00");
-        
+
         DefaultComboBoxModel<Oprema> ms = new DefaultComboBoxModel<>();
         Oprema vp = new Oprema();
         vp.setNaziv("Odaberite opremu");
@@ -53,7 +52,7 @@ public class Otpisi extends javax.swing.JFrame {
             ms.addElement(s);
         });
         cbOprema.setModel(ms);
-        
+
         DefaultComboBoxModel<Odjel> a = new DefaultComboBoxModel<>();
         Odjel od = new Odjel();
         od.setNaziv("Odaberite odjel");
@@ -62,8 +61,7 @@ public class Otpisi extends javax.swing.JFrame {
             a.addElement(s);
         });
         cbOdjel.setModel(a);
-        
-        
+
         ucitajPodatke();
     }
 
@@ -137,7 +135,7 @@ public class Otpisi extends javax.swing.JFrame {
         });
 
         jButton1.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jButton1.setText("Ocisti");
+        jButton1.setText("Očisti");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
@@ -152,42 +150,51 @@ public class Otpisi extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(25, 25, 25)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 313, Short.MAX_VALUE)
-                .addGap(18, 18, 18)
+                .addContainerGap()
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 246, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addComponent(jButton1, javax.swing.GroupLayout.Alignment.TRAILING)
-                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                            .addComponent(btnDodaj)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                            .addComponent(btnPromjena)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                            .addComponent(btnBrisanje))
-                        .addComponent(cbOdjel, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(cbOprema, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGroup(layout.createSequentialGroup()
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(24, 24, 24)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(27, 27, 27))
-                        .addGroup(layout.createSequentialGroup()
-                            .addComponent(txtVrijednost, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(chbAktivno, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(12, 12, 12)))
-                    .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(29, 29, 29))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(txtVrijednost, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(68, 68, 68)
+                                .addComponent(chbAktivno, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(0, 2, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(cbOdjel, javax.swing.GroupLayout.PREFERRED_SIZE, 285, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(jButton1, javax.swing.GroupLayout.Alignment.TRAILING)
+                                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                    .addComponent(btnDodaj)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                    .addComponent(btnPromjena)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                    .addComponent(btnBrisanje))
+                                .addComponent(cbOprema, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 285, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(231, 231, 231)))))))
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addContainerGap()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 321, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(31, 31, 31)
                         .addComponent(jLabel2)
-                        .addGap(11, 11, 11)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(txtVrijednost, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(5, 5, 5)
+                                .addComponent(txtVrijednost, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addComponent(chbAktivno))
                         .addGap(37, 37, 37)
                         .addComponent(jLabel3)
@@ -203,52 +210,13 @@ public class Otpisi extends javax.swing.JFrame {
                             .addComponent(btnPromjena)
                             .addComponent(btnBrisanje))
                         .addGap(18, 18, 18)
-                        .addComponent(jButton1))
-                    .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 388, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(29, Short.MAX_VALUE))
+                        .addComponent(jButton1)))
+                .addContainerGap())
         );
 
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
-
-    private void lstOtpisiValueChanged(javax.swing.event.ListSelectionEvent evt) {//GEN-FIRST:event_lstOtpisiValueChanged
-        if (evt.getValueIsAdjusting()) {
-            return;
-        }
-
-        Otpis s = lstOtpisi.getSelectedValue();
-        if (s == null) {
-            return;
-        }
-        
-        try {
-            txtVrijednost.setText(format.format(s.getVrijednost()));
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        
-        chbAktivno.setSelected(s.isAktivno());
-
-        modelOdjel = (DefaultComboBoxModel<Odjel>) cbOdjel.getModel();
-        for (int i = 0; i < modelOdjel.getSize(); i++) {
-            if (modelOdjel.getElementAt(i).getSifra() == s.getOdjel().getSifra()) {
-                cbOdjel.setSelectedIndex(i);
-                break;
-            }
-        }
-        
-        modelOprema = (DefaultComboBoxModel<Oprema>) cbOprema.getModel();
-        for (int i = 0; i < modelOprema.getSize(); i++) {
-            if (modelOprema.getElementAt(i).getSifra() == s.getOprema().getSifra()) {
-                cbOprema.setSelectedIndex(i);
-                break;
-            }
-        }
-
-    }//GEN-LAST:event_lstOtpisiValueChanged
 
     private void btnDodajActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDodajActionPerformed
         Otpis s = new Otpis();
@@ -265,7 +233,7 @@ public class Otpisi extends javax.swing.JFrame {
         ucitajPodatke();
         ocistiPolja();
 
-        
+
     }//GEN-LAST:event_btnDodajActionPerformed
 
     private void btnPromjenaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPromjenaActionPerformed
@@ -287,7 +255,7 @@ public class Otpisi extends javax.swing.JFrame {
         ucitajPodatke();
         ocistiPolja();
 
-        
+
     }//GEN-LAST:event_btnPromjenaActionPerformed
 
     private void btnBrisanjeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBrisanjeActionPerformed
@@ -310,7 +278,41 @@ public class Otpisi extends javax.swing.JFrame {
         ocistiPolja();
     }//GEN-LAST:event_jButton1ActionPerformed
 
-  
+    private void lstOtpisiValueChanged(javax.swing.event.ListSelectionEvent evt) {//GEN-FIRST:event_lstOtpisiValueChanged
+        if (evt.getValueIsAdjusting()) {
+            return;
+        }
+
+        Otpis s = lstOtpisi.getSelectedValue();
+        if (s == null) {
+            return;
+        }
+
+        try {
+            txtVrijednost.setText(format.format(s.getVrijednost()));
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        chbAktivno.setSelected(s.isAktivno());
+
+        modelOdjel = (DefaultComboBoxModel<Odjel>) cbOdjel.getModel();
+        for (int i = 0; i < modelOdjel.getSize(); i++) {
+            if (modelOdjel.getElementAt(i).getSifra() == s.getOdjel().getSifra()) {
+                cbOdjel.setSelectedIndex(i);
+                break;
+            }
+        }
+
+        modelOprema = (DefaultComboBoxModel<Oprema>) cbOprema.getModel();
+        for (int i = 0; i < modelOprema.getSize(); i++) {
+            if (modelOprema.getElementAt(i).getSifra() == s.getOprema().getSifra()) {
+                cbOprema.setSelectedIndex(i);
+                break;
+            }
+        }
+    }//GEN-LAST:event_lstOtpisiValueChanged
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnBrisanje;
@@ -341,7 +343,7 @@ public class Otpisi extends javax.swing.JFrame {
         cbOdjel.setSelectedIndex(0);
         cbOprema.setSelectedIndex(0);
         chbAktivno.setSelected(false);
-        
+
     }
 
     private void preuzmiVrijednosti(Otpis s) {
@@ -352,11 +354,11 @@ public class Otpisi extends javax.swing.JFrame {
                     )
             );
         } catch (Exception e) {
-           s.setVrijednost(BigDecimal.ZERO);
-           txtVrijednost.setText("0");
+            s.setVrijednost(BigDecimal.ZERO);
+            txtVrijednost.setText("0");
         };
         s.setAktivno(chbAktivno.isSelected());
-        s.setOdjel((Odjel)cbOdjel.getSelectedItem());
-        s.setOprema((Oprema)cbOprema.getSelectedItem());
+        s.setOdjel((Odjel) cbOdjel.getSelectedItem());
+        s.setOprema((Oprema) cbOprema.getSelectedItem());
     }
 }

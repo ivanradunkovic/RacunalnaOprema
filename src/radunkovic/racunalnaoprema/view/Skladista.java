@@ -85,8 +85,8 @@ public class Skladista extends javax.swing.JFrame {
 
         txtKolicina.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
 
+        chbDostupan.setText("Dostupno");
         chbDostupan.setFont(new java.awt.Font("Tahoma", 3, 14)); // NOI18N
-        chbDostupan.setText("Dostupan");
 
         btnDodaj.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         btnDodaj.setText("Dodaj");
@@ -112,8 +112,8 @@ public class Skladista extends javax.swing.JFrame {
             }
         });
 
+        jButton1.setText("Očisti");
         jButton1.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jButton1.setText("Ocisti");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);

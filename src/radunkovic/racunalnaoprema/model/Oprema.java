@@ -90,7 +90,7 @@ public class Oprema extends Entitet implements Serializable{
 
     @Override
     public String toString() {
-        return "Naziv: " + naziv + ", cijena: " + cijena + " kn"+", macAdresa: " + macadresa;
+        return "Naziv: " + naziv + ", Cijena: " + cijena + " kn"+", macAdresa: " + macadresa;
     }
     
     

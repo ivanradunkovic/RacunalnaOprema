@@ -5,12 +5,14 @@
  */
 package radunkovic.racunalnaoprema.controller;
 
+import java.util.Arrays;
 import java.util.List;
 import org.hibernate.Query;
 import radunkovic.racunalnaoprema.model.Korisnik;
 import radunkovic.racunalnaoprema.pomocno.HibernateUtil;
 import radunkovic.racunalnaoprema.pomocno.ObradaSucelje;
 import radunkovic.racunalnaoprema.pomocno.RacunalnaOpremaException;
+import radunkovic.racunalnaoprema.view.Korisnici;
 
 /**
  *

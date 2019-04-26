@@ -91,7 +91,7 @@ public class SplashScreen extends javax.swing.JFrame {
 
             lblPoruka.setText("Spajam se na bazu...");
             if (new ObradaOprema().getLista().size() > 0) {
-                lblPoruka.setText("Uspješno, startam program..");
+                lblPoruka.setText("Startam program...");
                 for (int i = 50; i <= 100; i++) {
                     jProgressBar1.setValue(i);
                     try {

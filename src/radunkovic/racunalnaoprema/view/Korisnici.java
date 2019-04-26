@@ -231,6 +231,11 @@ public class Korisnici extends javax.swing.JFrame {
     private void btnDodajActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDodajActionPerformed
         Korisnik entitet = new Korisnik();
 
+        if(((Odjel)cmbOdjel.getSelectedItem()).getSifra()==0){
+            //javiš da odabere odjel
+            return;
+        }
+            
         preuzmiVrijednosti(entitet);
 
         try {
